@@ -1,2 +1,24 @@
 # qFioofa-tmux
+
 Personal tmux config.
+
+# Install
+
+Install tmux
+
+```bash
+sudo apt install tmux
+```
+
+Clone repo
+
+```bash
+git clone https://github.com/qFioofa/qFioofa-tmux
+```
+
+Deploy config
+
+```bash
+cd ./qFioofa-tmux
+bash ./scripts/deploy.sh -r
+```
