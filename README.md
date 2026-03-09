@@ -10,6 +10,11 @@ Install tmux
 sudo apt install tmux
 ```
 
+Plugin manager
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
 Clone repo
 
 ```bash
