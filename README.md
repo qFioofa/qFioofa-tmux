@@ -27,3 +27,17 @@ Deploy config
 cd ./qFioofa-tmux
 bash ./scripts/deploy.sh -r
 ```
+
+# Nix
+
+Ships a `flake.nix` exposing a Home Manager module (`homeManagerModules.default`).
+It symlinks `./src` to `~/.config/tmux` via `xdg.configFile`, so the config can
+be managed declaratively instead of running `scripts/deploy.sh`.
+
+```nix
+# flake inputs
+qFioofa-tmux.url = "github:qFioofa/qFioofa-tmux";
+
+# home configuration
+imports = [ qFioofa-tmux.homeManagerModules.default ];
+```
